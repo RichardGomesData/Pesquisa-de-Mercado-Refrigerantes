@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Pesquisa de Mercado Refrigerantes"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "00638cb7-ea47-4d09-a09d-26a735caff8d"
+  }
+}

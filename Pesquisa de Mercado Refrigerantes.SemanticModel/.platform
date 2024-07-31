@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Pesquisa de Mercado Refrigerantes"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3f2a6ae7-75db-4850-8a3d-ae5856cf0af3"
+  }
+}
