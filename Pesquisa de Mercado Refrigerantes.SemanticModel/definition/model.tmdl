@@ -1,9 +1,24 @@
 model Model
 	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
 
 annotation PBI_ProTooling = ["DevMode"]
 
 annotation PBIDesktopVersion = 2.131.1203.0 (24.07)
+
+annotation PBI_QueryOrder = ["vw_Questao","vw_Respondente","vw_Resposta","tbQuestaoOpcao"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+ref table vw_Questao
+ref table DateTableTemplate_a6a72cb4-9a16-470a-8dd3-aaa2dfc97ef3
+ref table vw_Respondente
+ref table vw_Resposta
+ref table tbQuestaoOpcao
 
 ref cultureInfo pt-BR
 

@@ -1,0 +1,50 @@
+table vw_Questao
+	lineageTag: 136c4997-d8b4-4450-af22-eb6ff5f545e2
+
+	column CodQuestao
+		dataType: int64
+		formatString: 0
+		lineageTag: 7d4904d2-66c3-4167-bf20-628af889eec6
+		summarizeBy: none
+		sourceColumn: CodQuestao
+
+		annotation SummarizationSetBy = Automatic
+
+	column Descricao
+		dataType: string
+		lineageTag: 28380b76-42dd-4b19-be57-7e5ca2879bf3
+		summarizeBy: none
+		sourceColumn: Descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column Grupo
+		dataType: string
+		lineageTag: 75fbe9f7-2bd2-4421-a6fe-5342faadd5c7
+		summarizeBy: none
+		sourceColumn: Grupo
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeMarca
+		dataType: string
+		lineageTag: d5c4080a-dda2-4b57-99f6-21e3db04c5ac
+		summarizeBy: none
+		sourceColumn: NomeMarca
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_Questao = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("RICHARD_WIN\SQLEXPRESS", "REFRI"),
+				    dbo_vw_Questao = Source{[Schema="dbo",Item="vw_Questao"]}[Data],
+				    #"Removed Columns" = Table.RemoveColumns(dbo_vw_Questao,{"Controle"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

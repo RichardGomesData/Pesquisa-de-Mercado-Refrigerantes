@@ -1,0 +1,60 @@
+table vw_Respondente
+	lineageTag: fa1ad4c2-a30a-4fde-b86a-cc061784ceff
+
+	column CodRespondente
+		dataType: int64
+		formatString: 0
+		lineageTag: 51ac2884-7e84-4736-ac02-99520e642045
+		summarizeBy: none
+		sourceColumn: CodRespondente
+
+		annotation SummarizationSetBy = Automatic
+
+	column DescMes
+		dataType: string
+		lineageTag: 7c539c41-caad-47b3-a1bb-dc59ad4d2b65
+		summarizeBy: none
+		sourceColumn: DescMes
+
+		annotation SummarizationSetBy = Automatic
+
+	column SequenciaMes
+		dataType: int64
+		formatString: 0
+		lineageTag: fd8b8970-3d1c-455d-8cee-a35d4cda1d7f
+		summarizeBy: none
+		sourceColumn: SequenciaMes
+
+		annotation SummarizationSetBy = Automatic
+
+	column DescTri
+		dataType: string
+		lineageTag: 397e5e6f-296b-47c8-bd29-1be2d1860689
+		summarizeBy: none
+		sourceColumn: DescTri
+
+		annotation SummarizationSetBy = Automatic
+
+	column SequenciaTri
+		dataType: int64
+		formatString: 0
+		lineageTag: 6df1e582-105d-4bc2-b6ef-06293901b8a8
+		summarizeBy: none
+		sourceColumn: SequenciaTri
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_Respondente = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("RICHARD_WIN\SQLEXPRESS", "REFRI"),
+				    dbo_vw_Respondente = Source{[Schema="dbo",Item="vw_Respondente"]}[Data],
+				    #"Removed Columns" = Table.RemoveColumns(dbo_vw_Respondente,{"Controle"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

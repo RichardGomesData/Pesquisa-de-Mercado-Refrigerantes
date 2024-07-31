@@ -1,0 +1,12 @@
+relationship AutoDetected_c65c501c-cf9e-4060-a90e-11e84157c9a7
+	fromColumn: vw_Resposta.CodQuestao
+	toColumn: vw_Questao.CodQuestao
+
+relationship AutoDetected_f12e4bcf-afc1-459d-b515-77a97a610c1b
+	fromColumn: tbQuestaoOpcao.CodQuestao
+	toColumn: vw_Questao.CodQuestao
+
+relationship AutoDetected_17920284-2cf1-4e10-8903-401063743d95
+	fromColumn: vw_Resposta.CodRespondente
+	toColumn: vw_Respondente.CodRespondente
+
