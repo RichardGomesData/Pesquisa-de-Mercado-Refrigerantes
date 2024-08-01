@@ -1,0 +1,41 @@
+table tbPeriodoTrimestral
+	lineageTag: 560d1e46-6d20-44ba-ae8d-2b0f808b6aaf
+
+	column CodRespondente
+		dataType: int64
+		formatString: 0
+		lineageTag: 6bc36207-ad2d-4380-aceb-d207034f7299
+		summarizeBy: sum
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: vw_Respondente[CodRespondente]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DescTri
+		dataType: string
+		lineageTag: 1763541a-184a-4840-b832-ee2c15334b98
+		summarizeBy: none
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: vw_Respondente[DescTri]
+
+		annotation SummarizationSetBy = Automatic
+
+	column SequenciaTri
+		dataType: int64
+		formatString: 0
+		lineageTag: 31d5723e-e112-416d-894e-00144fc0d47b
+		summarizeBy: sum
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: vw_Respondente[SequenciaTri]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tbPeriodoTrimestral = calculated
+		mode: import
+		source = GROUPBY(vw_Respondente, vw_Respondente[CodRespondente],vw_Respondente[DescTri],vw_Respondente[SequenciaTri])
+
+	annotation PBI_Id = ba7ebcce4d694201ad72f4e1587e03e7
+

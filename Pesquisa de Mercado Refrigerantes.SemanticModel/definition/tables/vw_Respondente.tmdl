@@ -22,7 +22,7 @@ table vw_Respondente
 		dataType: int64
 		formatString: 0
 		lineageTag: fd8b8970-3d1c-455d-8cee-a35d4cda1d7f
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: SequenciaMes
 
 		annotation SummarizationSetBy = Automatic
@@ -39,7 +39,7 @@ table vw_Respondente
 		dataType: int64
 		formatString: 0
 		lineageTag: 6df1e582-105d-4bc2-b6ef-06293901b8a8
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: SequenciaTri
 
 		annotation SummarizationSetBy = Automatic

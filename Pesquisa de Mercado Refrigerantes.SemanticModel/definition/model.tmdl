@@ -22,6 +22,9 @@ ref table tbQuestaoOpcao
 ref table vw_Idade
 ref table vw_Sexo
 ref table vw_Regiao
+ref table tbPeriodoMensal
+ref table tbPeriodoTrimestral
+ref table tbPeriodoMaster
 
 ref cultureInfo pt-BR
 

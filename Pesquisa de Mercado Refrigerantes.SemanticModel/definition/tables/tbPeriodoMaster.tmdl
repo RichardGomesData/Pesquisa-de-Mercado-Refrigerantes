@@ -1,0 +1,59 @@
+table tbPeriodoMaster
+	lineageTag: 8292210d-0907-42b7-85e6-c558c42a07ee
+
+	column 'Agrupamento de período'
+		dataType: string
+		lineageTag: 692f3c65-051e-440b-a850-7463dd681573
+		summarizeBy: none
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: [Agrupamento de período]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodRespondente
+		dataType: int64
+		formatString: 0
+		lineageTag: b650e116-d6ce-445b-bc42-65fcaa5bccd9
+		summarizeBy: none
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: tbPeriodoMensal[CodRespondente]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DescMes
+		dataType: string
+		lineageTag: 24724a40-ccb2-4df3-a391-ae474e1cc490
+		summarizeBy: none
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: tbPeriodoMensal[DescMes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column SequenciaMes
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b4882c5-4aab-4b4c-801e-9d31c49674d8
+		summarizeBy: sum
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: tbPeriodoMensal[SequenciaMes]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tbPeriodoMaster = calculated
+		mode: import
+		source = ```
+				
+				 var mes = CROSSJOIN(ROW("Agrupamento de período", "Mensal"),tbPeriodoMensal)
+				 var tri = CROSSJOIN(ROW("Agrupamento de período", "Trimestral"),tbPeriodoTrimestral)
+				
+				 RETURN
+				
+				UNION(mes, tri)
+				```
+
+	annotation PBI_Id = d544815919e14b77ae70c3032cde4202
+

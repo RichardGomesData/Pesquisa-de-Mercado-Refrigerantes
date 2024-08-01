@@ -70,37 +70,82 @@
       "config": "{}",
       "displayName": "Marcas Lembradas",
       "displayOption": 1,
-      "filters": "[]",
+      "filters": "[{\"name\":\"Filter418c2648a07697c2462b\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"vw_Questao\"}},\"Property\":\"Grupo\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Questao\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Grupo\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Lembrança de Marcas'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
       "height": 720.00,
       "name": "57e09a5c1f113eeb2e37",
       "ordinal": 1,
       "visualContainers": [
         {
-          "config": "{\"name\":\"33a6951b50f3e1416fac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":311.6364917224375,\"y\":92.33673828812962,\"z\":1,\"width\":279.8957379358929,\"height\":93.77949982388165,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vw_Sexo.Resposta\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Sexo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Resposta\"},\"Name\":\"vw_Sexo.Resposta\",\"NativeReferenceName\":\"Resposta\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sexo'\"}}}}}]}}}",
+          "config": "{\"name\":\"33a6951b50f3e1416fac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":709.8386755899965,\"y\":93.77949982388165,\"z\":1,\"width\":137.06234589644242,\"height\":93.77949982388165,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vw_Sexo.Resposta\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Sexo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Resposta\"},\"Name\":\"vw_Sexo.Resposta\",\"NativeReferenceName\":\"Resposta\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sexo'\"}}}}}]}}}",
           "filters": "[]",
           "height": 93.78,
-          "width": 279.90,
-          "x": 311.64,
-          "y": 92.34,
+          "width": 137.06,
+          "x": 709.84,
+          "y": 93.78,
           "z": 1.00
         },
         {
-          "config": "{\"name\":\"5c78981cd532b2d6db6e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":31.367456473360384,\"y\":94.10236942008116,\"z\":0,\"width\":279.8942269930619,\"height\":92.89592878649037,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vw_Idade.Resposta\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Idade\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Resposta\"},\"Name\":\"vw_Idade.Resposta\",\"NativeReferenceName\":\"Resposta\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Idade'\"}}}}}]}}}",
+          "config": "{\"name\":\"5c78981cd532b2d6db6e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":522.2796759422332,\"y\":93.77949982388165,\"z\":0,\"width\":161.58929200422685,\"height\":93.77949982388165,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vw_Idade.Resposta\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Idade\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Resposta\"},\"Name\":\"vw_Idade.Resposta\",\"NativeReferenceName\":\"Resposta\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Idade'\"}}}}}]}}}",
           "filters": "[]",
-          "height": 92.90,
-          "width": 279.89,
-          "x": 31.37,
-          "y": 94.10,
+          "height": 93.78,
+          "width": 161.59,
+          "x": 522.28,
+          "y": 93.78,
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"96aceee2e3691c83281b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":591.5322296583304,\"y\":92.33673828812962,\"z\":2,\"width\":279.8957379358929,\"height\":93.77949982388165,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vw_Regiao.Resposta\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Regiao\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Resposta\"},\"Name\":\"vw_Regiao.Resposta\",\"NativeReferenceName\":\"Resposta\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Região'\"}}}}}]}}}",
+          "config": "{\"name\":\"8fd3ec0457a5d1f93a32\",\"layouts\":[{\"id\":0,\"position\":{\"x\":230.84184572032405,\"y\":93.77949982388165,\"z\":4,\"width\":279.8957379358929,\"height\":83.68016907361748,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"tbPeriodoMaster.DescMes\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"tbPeriodoMaster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"DescMes\"},\"Name\":\"tbPeriodoMaster.DescMes\",\"NativeReferenceName\":\"DescMes\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 83.68,
+          "width": 279.90,
+          "x": 230.84,
+          "y": 93.78,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"96aceee2e3691c83281b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":900.2831983092639,\"y\":93.77949982388165,\"z\":2,\"width\":199.1010919337795,\"height\":93.77949982388165,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vw_Regiao.Resposta\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Regiao\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Resposta\"},\"Name\":\"vw_Regiao.Resposta\",\"NativeReferenceName\":\"Resposta\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Região'\"}}}}}]}}}",
           "filters": "[]",
           "height": 93.78,
-          "width": 279.90,
-          "x": 591.53,
-          "y": 92.34,
+          "width": 199.10,
+          "x": 900.28,
+          "y": 93.78,
           "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"a9cdb64467b3935a6046\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":5,\"width\":1279.7294822120466,\"height\":82.23740753786545,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(vw_Questao.Grupo)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Questao\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Grupo\"}},\"Function\":3},\"Name\":\"Min(vw_Questao.Grupo)\",\"NativeReferenceName\":\"First Grupo\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9C00CB'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.24,
+          "width": 1279.73,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"d03197cafed8c1186d41\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30.1610158397696,\"y\":155.63084173321116,\"z\":6,\"width\":1031.5067417201203,\"height\":282.30710826024347,\"tabOrder\":6}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"vw_Resposta.Resposta\",\"active\":true}],\"Y\":[{\"queryRef\":\"vw_Resposta._Percentual\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Resposta\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Resposta\"},\"Name\":\"vw_Resposta.Resposta\",\"NativeReferenceName\":\"Resposta\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"_Percentual\"},\"Name\":\"vw_Resposta._Percentual\",\"NativeReferenceName\":\"_Percentual\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"_Percentual\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 282.31,
+          "width": 1031.51,
+          "x": 30.16,
+          "y": 155.63,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"d31697ea820197fee4a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30.1610158397696,\"y\":437.9379499934546,\"z\":7,\"width\":1031.5067417201203,\"height\":282.30710826024347,\"tabOrder\":7}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"vw_Resposta.Resposta\",\"active\":true}],\"Y\":[{\"queryRef\":\"vw_Resposta._Percentual\"}],\"Rows\":[{\"queryRef\":\"tbPeriodoMaster.DescMes\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Resposta\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"tbPeriodoMaster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Resposta\"},\"Name\":\"vw_Resposta.Resposta\",\"NativeReferenceName\":\"Resposta\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"_Percentual\"},\"Name\":\"vw_Resposta._Percentual\",\"NativeReferenceName\":\"_Percentual\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"DescMes\"},\"Name\":\"tbPeriodoMaster.DescMes\",\"NativeReferenceName\":\"DescMes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"_Percentual\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 282.31,
+          "width": 1031.51,
+          "x": 30.16,
+          "y": 437.94,
+          "z": 7.00
+        },
+        {
+          "config": "{\"name\":\"f4537b66c3954229d510\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30.297992250792532,\"y\":93.77949982388165,\"z\":3,\"width\":200.5438534695315,\"height\":93.77949982388165,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"tbPeriodoMaster.Agrupamento de período\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"tbPeriodoMaster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Agrupamento de período\"},\"Name\":\"tbPeriodoMaster.Agrupamento de período\",\"NativeReferenceName\":\"Agrupamento de período\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Período'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"tbPeriodoMaster\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Agrupamento de período\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Trimestral'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 93.78,
+          "width": 200.54,
+          "x": 30.30,
+          "y": 93.78,
+          "z": 3.00
         }
       ],
       "width": 1280.00

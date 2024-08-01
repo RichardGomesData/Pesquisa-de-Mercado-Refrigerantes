@@ -28,3 +28,8 @@ relationship 075db662-6829-5434-40c7-c60198902684
 	fromColumn: vw_Idade.CodRespondente
 	toColumn: vw_Respondente.CodRespondente
 
+relationship efbb22e6-5e32-fcc7-f800-2a799ae67043
+	crossFilteringBehavior: bothDirections
+	fromColumn: tbPeriodoMaster.CodRespondente
+	toColumn: vw_Respondente.CodRespondente
+

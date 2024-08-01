@@ -1,0 +1,41 @@
+table tbPeriodoMensal
+	lineageTag: cd4cabd1-a3da-432b-89b7-6ee0c33210a5
+
+	column CodRespondente
+		dataType: int64
+		formatString: 0
+		lineageTag: 67ee80fd-a138-4115-b38f-034e2b9c2cda
+		summarizeBy: sum
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: vw_Respondente[CodRespondente]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DescMes
+		dataType: string
+		lineageTag: f88f83b4-6fc5-4e65-bcb1-e7c923b06489
+		summarizeBy: none
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: vw_Respondente[DescMes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column SequenciaMes
+		dataType: int64
+		formatString: 0
+		lineageTag: 0cd7cce3-d682-418b-8508-7d3a61592485
+		summarizeBy: sum
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: vw_Respondente[SequenciaMes]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tbPeriodoMensal = calculated
+		mode: import
+		source = GROUPBY(vw_Respondente,vw_Respondente[CodRespondente],vw_Respondente[DescMes],vw_Respondente[SequenciaMes])
+
+	annotation PBI_Id = 59c726c7e5c34d93af15e2df8854e774
+
