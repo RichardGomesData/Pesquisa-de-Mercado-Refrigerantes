@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 766.4000244140625,
         "y": 0
       },
       "nodes": [
@@ -54,6 +54,45 @@
           },
           "nodeIndex": "vw_Resposta",
           "nodeLineageTag": "6421991d-897c-457a-a3c3-95fa613a1c12",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1410.6221629171364,
+            "y": 124.05942283342938
+          },
+          "nodeIndex": "vw_Regiao",
+          "nodeLineageTag": "ab200210-04b4-4d86-b71d-f51ff8107861",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1694.6221629171364,
+            "y": 124.05942283342938
+          },
+          "nodeIndex": "vw_Sexo",
+          "nodeLineageTag": "38382807-2af9-4400-9e20-2007981f2d09",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1108.6221629171364,
+            "y": 263.05942283342938
+          },
+          "nodeIndex": "vw_Idade",
+          "nodeLineageTag": "3c5c1b38-c784-484b-9ac2-12d9a2c1acd3",
           "size": {
             "height": 200,
             "width": 234

@@ -10,3 +10,21 @@ relationship AutoDetected_17920284-2cf1-4e10-8903-401063743d95
 	fromColumn: vw_Resposta.CodRespondente
 	toColumn: vw_Respondente.CodRespondente
 
+relationship AutoDetected_09f74156-2036-42fd-acd4-2d1b9aa72233
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: vw_Sexo.CodRespondente
+	toColumn: vw_Respondente.CodRespondente
+
+relationship AutoDetected_c6d9d3e9-f58d-4334-8b6a-81988176da00
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: vw_Regiao.CodRespondente
+	toColumn: vw_Respondente.CodRespondente
+
+relationship 075db662-6829-5434-40c7-c60198902684
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: vw_Idade.CodRespondente
+	toColumn: vw_Respondente.CodRespondente
+

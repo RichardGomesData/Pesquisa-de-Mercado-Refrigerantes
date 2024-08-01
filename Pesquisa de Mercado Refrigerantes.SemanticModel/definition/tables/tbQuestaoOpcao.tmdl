@@ -27,7 +27,5 @@ table tbQuestaoOpcao
 				in
 				    dbo_tbQuestaoOpcao
 
-	annotation PBI_NavigationStepName = Navigation
-
 	annotation PBI_ResultType = Table
 

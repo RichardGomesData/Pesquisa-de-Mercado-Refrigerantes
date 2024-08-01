@@ -1,0 +1,30 @@
+table vw_Idade
+	lineageTag: 3c5c1b38-c784-484b-9ac2-12d9a2c1acd3
+
+	column CodRespondente
+		dataType: int64
+		formatString: 0
+		lineageTag: b5961ecd-5d8b-4961-a5bc-0749f3e959b5
+		summarizeBy: none
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: vw_Respondente[CodRespondente]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resposta
+		dataType: string
+		lineageTag: 8ab6420d-3248-400a-8fd6-887690d86142
+		summarizeBy: none
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: vw_Resposta[Resposta]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_Idade = calculated
+		mode: import
+		source = GROUPBY(FILTER(vw_Resposta,vw_Resposta[CodQuestao]=1137),vw_Respondente[CodRespondente],vw_Resposta[Resposta])
+
+	annotation PBI_Id = 9039718bc9db4e8f8d5705739f19e184
+

@@ -1,7 +1,21 @@
 {
-  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2},\"customTheme\":{\"name\":\"Innovate\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Capa635546219785442.png",
+            "path": "Capa635546219785442.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
     {
       "resourcePackage": {
         "disabled": false,
@@ -10,6 +24,11 @@
             "name": "CY24SU06",
             "path": "BaseThemes/CY24SU06.json",
             "type": 202
+          },
+          {
+            "name": "Innovate",
+            "path": "BuiltInThemes/Innovate.json",
+            "type": 201
           }
         ],
         "name": "SharedResources",
@@ -20,13 +39,72 @@
   "sections": [
     {
       "config": "{}",
-      "displayName": "Page 1",
+      "displayName": "Capa",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
       "name": "57236decdc3ba799183b",
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4ba9235819a96ed34cd0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":72.14712204442321,\"z\":0,\"width\":1280.305708144256,\"height\":648.1012658227849,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Capa635546219785442.png\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 648.10,
+          "width": 1280.31,
+          "x": 0.00,
+          "y": 72.15,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a154f5abbd16ed0cabe5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":15.89682350131359,\"z\":1,\"width\":1280.305708144256,\"height\":42.79914019584428,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Refrigerantes: Análise de Desempenho das Marcas \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 42.80,
+          "width": 1280.31,
+          "x": 0.00,
+          "y": 15.90,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Marcas Lembradas",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "57e09a5c1f113eeb2e37",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"33a6951b50f3e1416fac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":311.6364917224375,\"y\":92.33673828812962,\"z\":1,\"width\":279.8957379358929,\"height\":93.77949982388165,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vw_Sexo.Resposta\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Sexo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Resposta\"},\"Name\":\"vw_Sexo.Resposta\",\"NativeReferenceName\":\"Resposta\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sexo'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 93.78,
+          "width": 279.90,
+          "x": 311.64,
+          "y": 92.34,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"5c78981cd532b2d6db6e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":31.367456473360384,\"y\":94.10236942008116,\"z\":0,\"width\":279.8942269930619,\"height\":92.89592878649037,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vw_Idade.Resposta\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Idade\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Resposta\"},\"Name\":\"vw_Idade.Resposta\",\"NativeReferenceName\":\"Resposta\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Idade'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 92.90,
+          "width": 279.89,
+          "x": 31.37,
+          "y": 94.10,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"96aceee2e3691c83281b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":591.5322296583304,\"y\":92.33673828812962,\"z\":2,\"width\":279.8957379358929,\"height\":93.77949982388165,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vw_Regiao.Resposta\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_Regiao\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Resposta\"},\"Name\":\"vw_Regiao.Resposta\",\"NativeReferenceName\":\"Resposta\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Região'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 93.78,
+          "width": 279.90,
+          "x": 591.53,
+          "y": 92.34,
+          "z": 2.00
+        }
+      ],
       "width": 1280.00
     }
-  ]
+  ],
+  "theme": "Innovate"
 }

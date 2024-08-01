@@ -1,0 +1,31 @@
+table vw_Sexo
+	lineageTag: 38382807-2af9-4400-9e20-2007981f2d09
+
+	column CodRespondente
+		dataType: int64
+		formatString: 0
+		lineageTag: 5b449a3c-4260-4c59-b6fb-821784a1384a
+		summarizeBy: none
+		sourceColumn: CodRespondente
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resposta
+		dataType: string
+		lineageTag: 644bb8b2-0a58-4589-8dbe-fcb21e95970a
+		summarizeBy: none
+		sourceColumn: Resposta
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_Sexo = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("RICHARD_WIN\SQLEXPRESS", "REFRI"),
+				    dbo_vw_Sexo = Source{[Schema="dbo",Item="vw_Sexo"]}[Data]
+				in
+				    dbo_vw_Sexo
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,31 @@
+table vw_Regiao
+	lineageTag: ab200210-04b4-4d86-b71d-f51ff8107861
+
+	column CodRespondente
+		dataType: int64
+		formatString: 0
+		lineageTag: dc70cf52-d81c-4839-aa87-e1720c8ef79a
+		summarizeBy: none
+		sourceColumn: CodRespondente
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resposta
+		dataType: string
+		lineageTag: 18aa5322-5a40-49e5-b132-286392f8973c
+		summarizeBy: none
+		sourceColumn: Resposta
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_Regiao = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("RICHARD_WIN\SQLEXPRESS", "REFRI"),
+				    dbo_vw_Regiao = Source{[Schema="dbo",Item="vw_Regiao"]}[Data]
+				in
+				    dbo_vw_Regiao
+
+	annotation PBI_ResultType = Table
+

@@ -10,7 +10,7 @@ annotation PBI_ProTooling = ["DevMode"]
 
 annotation PBIDesktopVersion = 2.131.1203.0 (24.07)
 
-annotation PBI_QueryOrder = ["vw_Questao","vw_Respondente","vw_Resposta","tbQuestaoOpcao"]
+annotation PBI_QueryOrder = ["vw_Questao","vw_Respondente","vw_Resposta","tbQuestaoOpcao","vw_Sexo","vw_Regiao"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -19,6 +19,9 @@ ref table DateTableTemplate_a6a72cb4-9a16-470a-8dd3-aaa2dfc97ef3
 ref table vw_Respondente
 ref table vw_Resposta
 ref table tbQuestaoOpcao
+ref table vw_Idade
+ref table vw_Sexo
+ref table vw_Regiao
 
 ref cultureInfo pt-BR
 
