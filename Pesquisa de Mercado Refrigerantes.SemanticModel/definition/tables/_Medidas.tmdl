@@ -1,0 +1,42 @@
+table _Medidas
+	lineageTag: c63fdbc5-3cee-4305-880b-e8bcabdbd6fb
+
+	measure _Base = CALCULATE(DISTINCTCOUNT(vw_Respondente[CodRespondente]), all(vw_Resposta[Resposta]))
+		formatString: 0
+		lineageTag: b8067eb3-d32d-4ab3-bd02-710a08405798
+
+	measure _Percentual =
+			
+			
+			DIVIDE(DISTINCTCOUNT(vw_Resposta[CodRespondente]), CALCULATE([_Base]))  *100
+		lineageTag: 16fcc0c5-84a6-4b34-a795-e0ebbd25c918
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _Label1Lembranca = ```
+			"Lembrança de Marca - " & SELECTEDVALUE(tbPeriodoMaster[Agrupamento de período])  
+			```
+		lineageTag: 1b83adca-c701-439a-a3fe-247ae5b6f0fd
+
+	column Column1
+		dataType: string
+		isHidden
+		lineageTag: 3ceb1bba-fbc5-42d5-918e-31297982f841
+		summarizeBy: none
+		sourceColumn: Column1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Medidas = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

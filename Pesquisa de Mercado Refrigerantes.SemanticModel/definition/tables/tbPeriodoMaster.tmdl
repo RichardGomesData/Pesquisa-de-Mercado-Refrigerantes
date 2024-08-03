@@ -29,6 +29,7 @@ table tbPeriodoMaster
 		isNameInferred
 		isDataTypeInferred
 		sourceColumn: tbPeriodoMensal[DescMes]
+		sortByColumn: SequenciaMes
 
 		annotation SummarizationSetBy = Automatic
 

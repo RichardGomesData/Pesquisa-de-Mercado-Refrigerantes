@@ -1,18 +1,6 @@
 table vw_Resposta
 	lineageTag: 6421991d-897c-457a-a3c3-95fa613a1c12
 
-	measure _Base = CALCULATE(DISTINCTCOUNT(vw_Respondente[CodRespondente]), all(vw_Resposta[Resposta]))
-		formatString: 0
-		lineageTag: b8067eb3-d32d-4ab3-bd02-710a08405798
-
-	measure _Percentual =
-			
-			
-			DIVIDE(DISTINCTCOUNT(vw_Resposta[CodRespondente]), CALCULATE([_Base]))  *100
-		lineageTag: 16fcc0c5-84a6-4b34-a795-e0ebbd25c918
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column CodQuestao
 		dataType: int64
 		formatString: 0
