@@ -43,6 +43,23 @@ table vw_Resposta
 
 		annotation SummarizationSetBy = Automatic
 
+	column NomeMarcaLembrada = if(vw_Resposta[CodQuestao]=1055,vw_Resposta[Resposta],BLANK())
+		dataType: string
+		lineageTag: d1ce4c7e-fdb9-4d85-95b6-a62ad9eb871a
+		summarizeBy: none
+		isDataTypeInferred
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrdemMarcaLembrada
+		dataType: int64
+		formatString: 0
+		lineageTag: 75cea3f6-d3a9-4d34-a589-e3f300602818
+		summarizeBy: sum
+		sourceColumn: OrdemMarcaLembrada
+
+		annotation SummarizationSetBy = Automatic
+
 	partition vw_Resposta = m
 		mode: import
 		source =

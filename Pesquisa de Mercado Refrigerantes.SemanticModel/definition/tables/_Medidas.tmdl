@@ -18,6 +18,52 @@ table _Medidas
 			```
 		lineageTag: 1b83adca-c701-439a-a3fe-247ae5b6f0fd
 
+	measure CorMarcaLembrada =
+			if(SELECTEDVALUE(vw_Resposta[Resposta])="Coca","#FF0000",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Convencao","#009900",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Dolly","#669900",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Fanta","#FF8C10",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Guaraná","#006600",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Guaraná Kuat","#006600",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="H2O","#C6084",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Pepsi","#0000FF",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Refri","#008000",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Refri de Laranja","#DFB948",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="refri de Limão","#66FF66",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Schin","#009900",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Schweppes","#FFd966",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Soda","#66FF66",
+			if (SELECTEDVALUE(vw_Resposta[Resposta]) in {"Tônica","Tonica"},"#2F75B5",
+			if (SELECTEDVALUE(vw_Resposta[Resposta]) in {"Tubaína","Tubaina"},"#A50021",
+			if (SELECTEDVALUE(vw_Resposta[Resposta])="Tutti Frutti","","#8D8D8D"
+			)))))))))))))))))
+		lineageTag: 614b01e6-7ad8-4876-8ae2-5d26b9954373
+
+	measure CorMarcaFreq = ```
+			if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Citrus","#8d8d8d",
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Coca","#FF0000" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Convencao","#CC0000", 
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Dolly","#669900" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Fanta","#7030A0" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Guaraná","#00B050", 
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Guaraná Kuat","#00B050", 
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "H2O","#C6E0B4" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Natural","#548235", 
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Outra","#8d8d8d" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Pepsi","#0000FF" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Refri","#0066FF" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Refri de Laranja","#8d8d8d" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Refri de Limão","#8d8d8d" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Refri MG","#8d8d8d" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Schin","#009900" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Schweppes","#8d8d8d" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Soda","#66FF66" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Tônica","#2F75B5" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Tubaína","#A50021" ,
+				if(SELECTEDVALUE(vw_Resposta[nomemarca])= "Tutti Fruti","#008000" , "#8d8d8d" )))))))))))))))))))))
+			```
+		lineageTag: efed319f-9de2-43cb-a8d8-5b6ce3650c1c
+
 	column Column1
 		dataType: string
 		isHidden
