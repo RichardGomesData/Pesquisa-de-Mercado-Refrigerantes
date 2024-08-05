@@ -64,6 +64,40 @@ table _Medidas
 			```
 		lineageTag: efed319f-9de2-43cb-a8d8-5b6ce3650c1c
 
+	measure _TesteT = ```
+			
+			var PercentualAnt = CALCULATE([_Percentual], FILTER(ALLSELECTED(tbPeriodoMaster), tbPeriodoMaster[SequenciaMes]=MAX(tbPeriodoMensal[SequenciaMes])-1))
+			
+			var PercentualAtual = CALCULATE([_Percentual], FILTER(ALLSELECTED(tbPeriodoMaster), tbPeriodoMaster[SequenciaMes]=MAX(tbPeriodoMensal[SequenciaMes])))
+			
+			var BaseAnt = CALCULATE([_Base], FILTER(ALLSELECTED(tbPeriodoMaster), tbPeriodoMaster[SequenciaMes]=MAX(tbPeriodoMensal[SequenciaMes])-1))
+			
+			var BaseAtual = CALCULATE([_Base], FILTER(ALLSELECTED(tbPeriodoMaster), tbPeriodoMaster[SequenciaMes]=MAX(tbPeriodoMensal[SequenciaMes])))
+			
+			VAR T = IF(OR(ISBLANK(PercentualAnt),ISBLANK(PercentualAtual)), BLANK(), ((PercentualAnt - PercentualAtual) / SQRT(ABS(((PercentualAnt * (100 - PercentualAnt)) / baseAnt) + ((PercentualAtual * (100 - PercentualAtual)) / baseAtual)))))
+			RETURN
+			T
+			
+			
+			```
+		formatString: 0
+		lineageTag: 3ea668fc-bf35-479d-b23a-55158cc4eb86
+
+	measure '_Teste T2' = ```
+			
+			 
+			Var PercentualAnt = CALCULATE([_Percentual], FILTER(ALLSELECTED(tbPeriodoMaster), tbPeriodoMaster[SequenciaMes]= MAX( tbPeriodoMaster[SequenciaMes]) - 1))
+			var PercentualAtual = CALCULATE([_Percentual], FILTER(ALLSELECTED(tbPeriodoMaster),  tbPeriodoMaster[SequenciaMes]= MAX( tbPeriodoMaster[SequenciaMes])))
+			Var baseAnt = CALCULATE([_Base], FILTER(ALLSELECTED(tbPeriodoMaster),  tbPeriodoMaster[SequenciaMes] = MAX( tbPeriodoMaster[SequenciaMes]) - 1))
+			var baseAtual = CALCULATE([_Base], FILTER(ALLSELECTED(tbPeriodoMaster),  tbPeriodoMaster[SequenciaMes]= MAX( tbPeriodoMaster[SequenciaMes]) ))
+			VAR T = IF(OR(ISBLANK(PercentualAnt),ISBLANK(PercentualAtual)), BLANK(), ((PercentualAnt - PercentualAtual) / SQRT(ABS(((PercentualAnt * (100 - PercentualAnt)) / baseAnt) + ((PercentualAtual * (100 - PercentualAtual)) / baseAtual)))))
+			RETURN
+			T
+			```
+		lineageTag: 566e4319-f80f-4221-8a6c-91b1d719a537
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Column1
 		dataType: string
 		isHidden
