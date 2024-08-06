@@ -26,6 +26,7 @@ ref table tbPeriodoMensal
 ref table tbPeriodoTrimestral
 ref table tbPeriodoMaster
 ref table _Medidas
+ref table tbComentarios
 
 ref cultureInfo pt-BR
 

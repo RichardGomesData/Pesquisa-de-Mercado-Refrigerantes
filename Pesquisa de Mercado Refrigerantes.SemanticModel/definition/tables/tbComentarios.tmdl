@@ -1,0 +1,42 @@
+table tbComentarios
+	lineageTag: d6681573-4612-4d79-9992-1b0dfa86ea05
+
+	column CodRespondente
+		dataType: int64
+		formatString: 0
+		lineageTag: 19b5e47a-fa6d-4486-9392-584513372bd2
+		summarizeBy: none
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: vw_Respondente[CodRespondente]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resposta
+		dataType: string
+		lineageTag: 5b372953-c9dd-40dd-ae06-1f7061e3c535
+		summarizeBy: none
+		isNameInferred
+		isDataTypeInferred
+		sourceColumn: vw_Resposta[Resposta]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes = ```
+			CALCULATE(MAX(tbPeriodoMaster[DescMes]), USERELATIONSHIP(tbComentarios[CodRespondente], tbPeriodoMaster[CodRespondente])) 
+			```
+		dataType: string
+		lineageTag: 7e740f3a-53b8-4460-9dc6-fe60b04aed04
+		summarizeBy: none
+		isDataTypeInferred
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tbComentarios = calculated
+		mode: import
+		source = ```
+				GROUPBY(FILTER(vw_Resposta, vw_Resposta[Grupo]= "Comentários"),vw_Respondente[CodRespondente],vw_Resposta[Resposta]) 
+				```
+
+	annotation PBI_Id = 10f6733a484541f08ce6b3eb32bf30e7
+

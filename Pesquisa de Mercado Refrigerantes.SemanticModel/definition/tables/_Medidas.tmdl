@@ -98,6 +98,13 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure _TituloComentarios = "Comentários Gerais"
+		lineageTag: e87a5859-b2fb-42f5-83f0-e6550362bb41
+
+	measure 'Quantidade de Comentários' = CALCULATE(DISTINCTCOUNT(tbComentarios[CodRespondente]))
+		formatString: 0
+		lineageTag: 6da78fd6-0e7c-420c-ba62-6c0d5cd8aa81
+
 	column Column1
 		dataType: string
 		isHidden

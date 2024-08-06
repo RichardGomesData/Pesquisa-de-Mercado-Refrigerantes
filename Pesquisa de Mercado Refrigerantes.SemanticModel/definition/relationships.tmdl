@@ -33,3 +33,13 @@ relationship efbb22e6-5e32-fcc7-f800-2a799ae67043
 	fromColumn: tbPeriodoMaster.CodRespondente
 	toColumn: vw_Respondente.CodRespondente
 
+relationship e74e969d-b837-62f2-f2d7-2d31e7ed2e17
+	crossFilteringBehavior: bothDirections
+	fromColumn: vw_Resposta.CodRespondente
+	toColumn: tbComentarios.CodRespondente
+
+relationship f1f1423b-9e45-5a4d-a749-545661637609
+	isActive: false
+	fromColumn: tbPeriodoMaster.CodRespondente
+	toColumn: tbComentarios.CodRespondente
+

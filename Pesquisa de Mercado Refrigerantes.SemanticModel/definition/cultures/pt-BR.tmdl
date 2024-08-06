@@ -2,8 +2,3327 @@ cultureInfo pt-BR
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "3.5.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "vw_questao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Questao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vw questao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vw_Questao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_questao.cod_questao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Questao",
+			          "ConceptualProperty": "CodQuestao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod questao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodQuestao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_questao.descricao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Questao",
+			          "ConceptualProperty": "Descricao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descricao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "vw_questao.grupo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Questao",
+			          "ConceptualProperty": "Grupo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "grupo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "vw_questao.nome_marca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Questao",
+			          "ConceptualProperty": "NomeMarca"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome marca": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NomeMarca": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_respondente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Respondente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vw respondente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vw_Respondente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_respondente.cod_respondente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Respondente",
+			          "ConceptualProperty": "CodRespondente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod respondente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodRespondente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_respondente.desc_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Respondente",
+			          "ConceptualProperty": "DescMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desc me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DescMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "description me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "vw_respondente.sequencia_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Respondente",
+			          "ConceptualProperty": "SequenciaMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sequencia me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SequenciaMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_respondente.desc_tri": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Respondente",
+			          "ConceptualProperty": "DescTri"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desc tri": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DescTri": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "description tri": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "vw_respondente.sequencia_tri": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Respondente",
+			          "ConceptualProperty": "SequenciaTri"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sequencia tri": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SequenciaTri": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_resposta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Resposta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vw resposta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vw_Resposta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_resposta.cod_questao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Resposta",
+			          "ConceptualProperty": "CodQuestao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod questao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodQuestao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_resposta.cod_respondente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Resposta",
+			          "ConceptualProperty": "CodRespondente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod respondente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodRespondente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ID Respondente": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "vw_resposta.resposta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Resposta",
+			          "ConceptualProperty": "Resposta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "resposta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "vw_resposta.grupo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Resposta",
+			          "ConceptualProperty": "Grupo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "grupo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "vw_resposta.nome_marca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Resposta",
+			          "ConceptualProperty": "NomeMarca"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome marca": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NomeMarca": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_resposta.nome_marca_lembrada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Resposta",
+			          "ConceptualProperty": "NomeMarcaLembrada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome marca lembrada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NomeMarcaLembrada": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_resposta.ordem_marca_lembrada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Resposta",
+			          "ConceptualProperty": "OrdemMarcaLembrada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordem marca lembrada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "OrdemMarcaLembrada": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_questao_opcao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbQuestaoOpcao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tb questao opcao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tbQuestaoOpcao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_questao_opcao.cod_questao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbQuestaoOpcao",
+			          "ConceptualProperty": "CodQuestao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod questao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodQuestao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_questao_opcao.label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbQuestaoOpcao",
+			          "ConceptualProperty": "Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        }
+			      ]
+			    },
+			    "vw_idade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Idade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vw idade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vw_Idade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_idade.cod_respondente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Idade",
+			          "ConceptualProperty": "CodRespondente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod respondente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodRespondente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_idade.resposta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Idade",
+			          "ConceptualProperty": "Resposta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "resposta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "vw_sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vw sexo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vw_Sexo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_sexo.cod_respondente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Sexo",
+			          "ConceptualProperty": "CodRespondente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod respondente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodRespondente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_sexo.resposta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Sexo",
+			          "ConceptualProperty": "Resposta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "resposta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "vw_regiao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Regiao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vw regiao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vw_Regiao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_regiao.cod_respondente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Regiao",
+			          "ConceptualProperty": "CodRespondente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod respondente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodRespondente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_regiao.resposta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Regiao",
+			          "ConceptualProperty": "Resposta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "resposta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_mensal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoMensal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tb periodo mensal": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tbPeriodoMensal": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_mensal.cod_respondente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoMensal",
+			          "ConceptualProperty": "CodRespondente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod respondente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodRespondente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_mensal.desc_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoMensal",
+			          "ConceptualProperty": "DescMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desc me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DescMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "description me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_mensal.sequencia_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoMensal",
+			          "ConceptualProperty": "SequenciaMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sequencia me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SequenciaMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_trimestral": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoTrimestral"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tb periodo trimestral": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tbPeriodoTrimestral": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_trimestral.cod_respondente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoTrimestral",
+			          "ConceptualProperty": "CodRespondente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod respondente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodRespondente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_trimestral.desc_tri": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoTrimestral",
+			          "ConceptualProperty": "DescTri"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desc tri": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DescTri": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "description tri": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_trimestral.sequencia_tri": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoTrimestral",
+			          "ConceptualProperty": "SequenciaTri"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sequencia tri": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SequenciaTri": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_master": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoMaster"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tb periodo master": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tbPeriodoMaster": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "tb periodo controller": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "tb periodo ruler": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "tb periodo leader": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "tb periodo owner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "tb periodo chief": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "tb periodo boss": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "tb periodo teacher": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "tb periodo guru": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "tb periodo instructor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "tb periodo trainer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_master.agrupamento_de_período": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoMaster",
+			          "ConceptualProperty": "Agrupamento de período"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "agrupamento de período": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_master.cod_respondente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoMaster",
+			          "ConceptualProperty": "CodRespondente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod respondente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodRespondente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_master.desc_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoMaster",
+			          "ConceptualProperty": "DescMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desc me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DescMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "description me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "tb_periodo_master.sequencia_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbPeriodoMaster",
+			          "ConceptualProperty": "SequenciaMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sequencia me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SequenciaMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.column_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Column1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "column 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.v_Base_base": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_Base"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_base": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ headquarters": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "_ center": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "_ seat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "_ station": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "_ pier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.v_Percentual_percentual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_Percentual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_percentual": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.v_Label1Lembranca_Label1Lembranca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_Label1Lembranca"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_Label1Lembranca": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.cor_marca_lembrada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "CorMarcaLembrada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor marca lembrada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CorMarcaLembrada": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.cor_marca_freq": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "CorMarcaFreq"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor marca freq": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CorMarcaFreq": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.v_TesteT_TesteT": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_TesteT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_TesteT": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.v_Teste_T2_teste_T2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_Teste T2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_teste T2": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.v_TituloComentarios_TituloComentarios": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_TituloComentarios"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_TituloComentarios": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tb_comentario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbComentarios"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tb comentario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tbComentarios": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_comentario.cod_respondente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbComentarios",
+			          "ConceptualProperty": "CodRespondente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod respondente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CodRespondente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tb_comentario.resposta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbComentarios",
+			          "ConceptualProperty": "Resposta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "resposta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Comentários": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "vw_regiao_has_vw_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Regiao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_regiao": {
+			          "Target": {
+			            "Entity": "vw_regiao"
+			          }
+			        },
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_regiao"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_regiaos_have_vw_respondentes"
+			        }
+			      ]
+			    },
+			    "vw_sexo_has_vw_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_sexo": {
+			          "Target": {
+			            "Entity": "vw_sexo"
+			          }
+			        },
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_sexo"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_sexos_have_vw_respondentes"
+			        }
+			      ]
+			    },
+			    "vw_idade_has_vw_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Idade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_idade": {
+			          "Target": {
+			            "Entity": "vw_idade"
+			          }
+			        },
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_idade"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_idades_have_vw_respondentes"
+			        }
+			      ]
+			    },
+			    "tb_questao_opcao_has_vw_questao": {
+			      "Binding": {
+			        "ConceptualEntity": "tbQuestaoOpcao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_questao_opcao": {
+			          "Target": {
+			            "Entity": "tb_questao_opcao"
+			          }
+			        },
+			        "vw_questao": {
+			          "Target": {
+			            "Entity": "vw_questao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_questao_opcao"
+			            },
+			            "Object": {
+			              "Role": "vw_questao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_questao_opcaos_have_vw_questaos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_questao"
+			            },
+			            "Object": {
+			              "Role": "tb_questao_opcao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_questaos_have_tb_questao_opcaos"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_tb_comentario": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "tb_comentario": {
+			          "Target": {
+			            "Entity": "tb_comentario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "tb_comentario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have_tb_comentarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_comentario"
+			            },
+			            "Object": {
+			              "Role": "vw_resposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_comentarios_have_vw_respostas"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_vw_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have_vw_respondentes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "vw_resposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_vw_respostas"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_vw_questao": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "vw_questao": {
+			          "Target": {
+			            "Entity": "vw_questao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "vw_questao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have_vw_questaos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_questao"
+			            },
+			            "Object": {
+			              "Role": "vw_resposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_questaos_have_vw_respostas"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_vw_idade": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "vw_idade": {
+			          "Target": {
+			            "Entity": "vw_idade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "vw_idade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_vw_idades"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_vw_regiao": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "vw_regiao": {
+			          "Target": {
+			            "Entity": "vw_regiao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "vw_regiao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_vw_regiaos"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_vw_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "vw_sexo": {
+			          "Target": {
+			            "Entity": "vw_sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "vw_sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_vw_sexos"
+			        }
+			      ]
+			    },
+			    "tb_comentario_has_resposta": {
+			      "Binding": {
+			        "ConceptualEntity": "tbComentarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_comentario": {
+			          "Target": {
+			            "Entity": "tb_comentario"
+			          }
+			        },
+			        "tb_comentario.resposta": {
+			          "Target": {
+			            "Entity": "tb_comentario.resposta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_comentario"
+			            },
+			            "Object": {
+			              "Role": "tb_comentario.resposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_comentarios_have_respostas"
+			        }
+			      ]
+			    },
+			    "tb_comentario_has_cod_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "tbComentarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_comentario": {
+			          "Target": {
+			            "Entity": "tb_comentario"
+			          }
+			        },
+			        "tb_comentario.cod_respondente": {
+			          "Target": {
+			            "Entity": "tb_comentario.cod_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_comentario"
+			            },
+			            "Object": {
+			              "Role": "tb_comentario.cod_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_comentarios_have_cod_respondentes"
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida_has_v_TituloComentarios_TituloComentarios": {
+			      "Binding": {
+			        "ConceptualEntity": "_Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Medidas_medida": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida"
+			          }
+			        },
+			        "v_Medidas_medida.v_TituloComentarios_TituloComentarios": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_TituloComentarios_TituloComentarios"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Medidas_medida"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_TituloComentarios_TituloComentarios"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have__TituloComentarios"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_v_Medidas_medida_v_Teste_T2_teste_T2": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "v_Medidas_medida.v_Teste_T2_teste_T2": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_Teste_T2_teste_T2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_Teste_T2_teste_T2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have__teste_T2"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_v_Medidas_medida_v_Teste_T2_teste_T2": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "v_Medidas_medida.v_Teste_T2_teste_T2": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_Teste_T2_teste_T2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_Teste_T2_teste_T2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have__teste_T2"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_v_Medidas_medida_v_TesteT_TesteT": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "v_Medidas_medida.v_TesteT_TesteT": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_TesteT_TesteT"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_TesteT_TesteT"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have__TesteT"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_v_Medidas_medida_v_TesteT_TesteT": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "v_Medidas_medida.v_TesteT_TesteT": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_TesteT_TesteT"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_TesteT_TesteT"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have__TesteT"
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida_has_cor_marca_freq": {
+			      "Binding": {
+			        "ConceptualEntity": "_Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Medidas_medida": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida"
+			          }
+			        },
+			        "v_Medidas_medida.cor_marca_freq": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.cor_marca_freq"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Medidas_medida"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.cor_marca_freq"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_cor_marca_freq"
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida_has_cor_marca_lembrada": {
+			      "Binding": {
+			        "ConceptualEntity": "_Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Medidas_medida": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida"
+			          }
+			        },
+			        "v_Medidas_medida.cor_marca_lembrada": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.cor_marca_lembrada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Medidas_medida"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.cor_marca_lembrada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_cor_marca_lembrada"
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida_has_v_Label1Lembranca_Label1Lembranca": {
+			      "Binding": {
+			        "ConceptualEntity": "_Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_Medidas_medida": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida"
+			          }
+			        },
+			        "v_Medidas_medida.v_Label1Lembranca_Label1Lembranca": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_Label1Lembranca_Label1Lembranca"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_Medidas_medida"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_Label1Lembranca_Label1Lembranca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have__Label1Lembranca"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_v_Medidas_medida_v_Percentual_percentual": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "v_Medidas_medida.v_Percentual_percentual": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_Percentual_percentual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_Percentual_percentual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have__percentual"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_v_Medidas_medida_v_Percentual_percentual": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "v_Medidas_medida.v_Percentual_percentual": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_Percentual_percentual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_Percentual_percentual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have__percentual"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_v_Medidas_medida_v_Base_base": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "v_Medidas_medida.v_Base_base": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_Base_base"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_Base_base"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have__base"
+			        }
+			      ]
+			    },
+			    "tb_periodo_master_has_sequencia_me": {
+			      "Binding": {
+			        "ConceptualEntity": "tbPeriodoMaster"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_periodo_master": {
+			          "Target": {
+			            "Entity": "tb_periodo_master"
+			          }
+			        },
+			        "tb_periodo_master.sequencia_me": {
+			          "Target": {
+			            "Entity": "tb_periodo_master.sequencia_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_periodo_master"
+			            },
+			            "Object": {
+			              "Role": "tb_periodo_master.sequencia_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_periodo_masters_have_sequencia_me"
+			        }
+			      ]
+			    },
+			    "tb_periodo_master_has_desc_me": {
+			      "Binding": {
+			        "ConceptualEntity": "tbPeriodoMaster"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_periodo_master": {
+			          "Target": {
+			            "Entity": "tb_periodo_master"
+			          }
+			        },
+			        "tb_periodo_master.desc_me": {
+			          "Target": {
+			            "Entity": "tb_periodo_master.desc_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_periodo_master"
+			            },
+			            "Object": {
+			              "Role": "tb_periodo_master.desc_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_periodo_masters_have_desc_me"
+			        }
+			      ]
+			    },
+			    "tb_periodo_master_has_agrupamento_de_período": {
+			      "Binding": {
+			        "ConceptualEntity": "tbPeriodoMaster"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_periodo_master": {
+			          "Target": {
+			            "Entity": "tb_periodo_master"
+			          }
+			        },
+			        "tb_periodo_master.agrupamento_de_período": {
+			          "Target": {
+			            "Entity": "tb_periodo_master.agrupamento_de_período"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_periodo_master"
+			            },
+			            "Object": {
+			              "Role": "tb_periodo_master.agrupamento_de_período"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_periodo_masters_have_agrupamento_de_períodos"
+			        },
+			        {
+			          "DynamicAdjective": {
+			            "Subject": {
+			              "Role": "tb_periodo_master"
+			            },
+			            "Adjective": {
+			              "Role": "tb_periodo_master.agrupamento_de_período"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "agrupamento_de_períodos_describe_tb_periodo_masters"
+			        }
+			      ]
+			    },
+			    "tb_periodo_trimestral_has_sequencia_tri": {
+			      "Binding": {
+			        "ConceptualEntity": "tbPeriodoTrimestral"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_periodo_trimestral": {
+			          "Target": {
+			            "Entity": "tb_periodo_trimestral"
+			          }
+			        },
+			        "tb_periodo_trimestral.sequencia_tri": {
+			          "Target": {
+			            "Entity": "tb_periodo_trimestral.sequencia_tri"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_periodo_trimestral"
+			            },
+			            "Object": {
+			              "Role": "tb_periodo_trimestral.sequencia_tri"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_periodo_trimestral_have_sequencia_tri"
+			        }
+			      ]
+			    },
+			    "tb_periodo_trimestral_has_desc_tri": {
+			      "Binding": {
+			        "ConceptualEntity": "tbPeriodoTrimestral"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_periodo_trimestral": {
+			          "Target": {
+			            "Entity": "tb_periodo_trimestral"
+			          }
+			        },
+			        "tb_periodo_trimestral.desc_tri": {
+			          "Target": {
+			            "Entity": "tb_periodo_trimestral.desc_tri"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_periodo_trimestral"
+			            },
+			            "Object": {
+			              "Role": "tb_periodo_trimestral.desc_tri"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_periodo_trimestral_have_desc_tri"
+			        }
+			      ]
+			    },
+			    "tb_periodo_trimestral_has_cod_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "tbPeriodoTrimestral"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_periodo_trimestral": {
+			          "Target": {
+			            "Entity": "tb_periodo_trimestral"
+			          }
+			        },
+			        "tb_periodo_trimestral.cod_respondente": {
+			          "Target": {
+			            "Entity": "tb_periodo_trimestral.cod_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_periodo_trimestral"
+			            },
+			            "Object": {
+			              "Role": "tb_periodo_trimestral.cod_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_periodo_trimestral_have_cod_respondentes"
+			        }
+			      ]
+			    },
+			    "tb_periodo_mensal_has_sequencia_me": {
+			      "Binding": {
+			        "ConceptualEntity": "tbPeriodoMensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_periodo_mensal": {
+			          "Target": {
+			            "Entity": "tb_periodo_mensal"
+			          }
+			        },
+			        "tb_periodo_mensal.sequencia_me": {
+			          "Target": {
+			            "Entity": "tb_periodo_mensal.sequencia_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_periodo_mensal"
+			            },
+			            "Object": {
+			              "Role": "tb_periodo_mensal.sequencia_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_periodo_mensal_have_sequencia_me"
+			        }
+			      ]
+			    },
+			    "tb_periodo_mensal_has_desc_me": {
+			      "Binding": {
+			        "ConceptualEntity": "tbPeriodoMensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_periodo_mensal": {
+			          "Target": {
+			            "Entity": "tb_periodo_mensal"
+			          }
+			        },
+			        "tb_periodo_mensal.desc_me": {
+			          "Target": {
+			            "Entity": "tb_periodo_mensal.desc_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_periodo_mensal"
+			            },
+			            "Object": {
+			              "Role": "tb_periodo_mensal.desc_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_periodo_mensal_have_desc_me"
+			        }
+			      ]
+			    },
+			    "tb_periodo_mensal_has_cod_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "tbPeriodoMensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_periodo_mensal": {
+			          "Target": {
+			            "Entity": "tb_periodo_mensal"
+			          }
+			        },
+			        "tb_periodo_mensal.cod_respondente": {
+			          "Target": {
+			            "Entity": "tb_periodo_mensal.cod_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_periodo_mensal"
+			            },
+			            "Object": {
+			              "Role": "tb_periodo_mensal.cod_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_periodo_mensal_have_cod_respondentes"
+			        }
+			      ]
+			    },
+			    "vw_regiao_has_resposta": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Regiao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_regiao": {
+			          "Target": {
+			            "Entity": "vw_regiao"
+			          }
+			        },
+			        "vw_regiao.resposta": {
+			          "Target": {
+			            "Entity": "vw_regiao.resposta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_regiao"
+			            },
+			            "Object": {
+			              "Role": "vw_regiao.resposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_regiaos_have_respostas"
+			        }
+			      ]
+			    },
+			    "vw_regiao_has_cod_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Regiao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_regiao": {
+			          "Target": {
+			            "Entity": "vw_regiao"
+			          }
+			        },
+			        "vw_regiao.cod_respondente": {
+			          "Target": {
+			            "Entity": "vw_regiao.cod_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_regiao"
+			            },
+			            "Object": {
+			              "Role": "vw_regiao.cod_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_regiaos_have_cod_respondentes"
+			        }
+			      ]
+			    },
+			    "vw_sexo_has_resposta": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_sexo": {
+			          "Target": {
+			            "Entity": "vw_sexo"
+			          }
+			        },
+			        "vw_sexo.resposta": {
+			          "Target": {
+			            "Entity": "vw_sexo.resposta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_sexo"
+			            },
+			            "Object": {
+			              "Role": "vw_sexo.resposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_sexos_have_respostas"
+			        }
+			      ]
+			    },
+			    "vw_sexo_has_cod_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_sexo": {
+			          "Target": {
+			            "Entity": "vw_sexo"
+			          }
+			        },
+			        "vw_sexo.cod_respondente": {
+			          "Target": {
+			            "Entity": "vw_sexo.cod_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_sexo"
+			            },
+			            "Object": {
+			              "Role": "vw_sexo.cod_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_sexos_have_cod_respondentes"
+			        }
+			      ]
+			    },
+			    "vw_idade_has_resposta": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Idade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_idade": {
+			          "Target": {
+			            "Entity": "vw_idade"
+			          }
+			        },
+			        "vw_idade.resposta": {
+			          "Target": {
+			            "Entity": "vw_idade.resposta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_idade"
+			            },
+			            "Object": {
+			              "Role": "vw_idade.resposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_idades_have_respostas"
+			        }
+			      ]
+			    },
+			    "vw_idade_has_cod_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Idade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_idade": {
+			          "Target": {
+			            "Entity": "vw_idade"
+			          }
+			        },
+			        "vw_idade.cod_respondente": {
+			          "Target": {
+			            "Entity": "vw_idade.cod_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_idade"
+			            },
+			            "Object": {
+			              "Role": "vw_idade.cod_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_idades_have_cod_respondentes"
+			        }
+			      ]
+			    },
+			    "tb_questao_opcao_has_label": {
+			      "Binding": {
+			        "ConceptualEntity": "tbQuestaoOpcao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_questao_opcao": {
+			          "Target": {
+			            "Entity": "tb_questao_opcao"
+			          }
+			        },
+			        "tb_questao_opcao.label": {
+			          "Target": {
+			            "Entity": "tb_questao_opcao.label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_questao_opcao"
+			            },
+			            "Object": {
+			              "Role": "tb_questao_opcao.label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_questao_opcaos_have_labels"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_ordem_marca_lembrada": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "vw_resposta.ordem_marca_lembrada": {
+			          "Target": {
+			            "Entity": "vw_resposta.ordem_marca_lembrada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "vw_resposta.ordem_marca_lembrada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have_ordem_marca_lembradas"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_nome_marca_lembrada": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "vw_resposta.nome_marca_lembrada": {
+			          "Target": {
+			            "Entity": "vw_resposta.nome_marca_lembrada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "vw_resposta.nome_marca_lembrada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have_nome_marca_lembradas"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_nome_marca": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "vw_resposta.nome_marca": {
+			          "Target": {
+			            "Entity": "vw_resposta.nome_marca"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "vw_resposta.nome_marca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have_nome_marcas"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_grupo": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "vw_resposta.grupo": {
+			          "Target": {
+			            "Entity": "vw_resposta.grupo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "vw_resposta.grupo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have_grupos"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_resposta": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "vw_resposta.resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta.resposta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "vw_resposta.resposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have_respostas"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_sequencia_tri": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "vw_respondente.sequencia_tri": {
+			          "Target": {
+			            "Entity": "vw_respondente.sequencia_tri"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente.sequencia_tri"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_sequencia_tri"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_desc_tri": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "vw_respondente.desc_tri": {
+			          "Target": {
+			            "Entity": "vw_respondente.desc_tri"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente.desc_tri"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_desc_tri"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_sequencia_me": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "vw_respondente.sequencia_me": {
+			          "Target": {
+			            "Entity": "vw_respondente.sequencia_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente.sequencia_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_sequencia_me"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_desc_me": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "vw_respondente.desc_me": {
+			          "Target": {
+			            "Entity": "vw_respondente.desc_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente.desc_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_desc_me"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_cod_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "vw_respondente.cod_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente.cod_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente.cod_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_cod_respondentes"
+			        }
+			      ]
+			    },
+			    "vw_questao_has_nome_marca": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Questao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_questao": {
+			          "Target": {
+			            "Entity": "vw_questao"
+			          }
+			        },
+			        "vw_questao.nome_marca": {
+			          "Target": {
+			            "Entity": "vw_questao.nome_marca"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_questao"
+			            },
+			            "Object": {
+			              "Role": "vw_questao.nome_marca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_questaos_have_nome_marcas"
+			        }
+			      ]
+			    },
+			    "vw_questao_has_grupo": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Questao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_questao": {
+			          "Target": {
+			            "Entity": "vw_questao"
+			          }
+			        },
+			        "vw_questao.grupo": {
+			          "Target": {
+			            "Entity": "vw_questao.grupo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_questao"
+			            },
+			            "Object": {
+			              "Role": "vw_questao.grupo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_questaos_have_grupos"
+			        }
+			      ]
+			    },
+			    "vw_questao_has_descricao": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Questao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_questao": {
+			          "Target": {
+			            "Entity": "vw_questao"
+			          }
+			        },
+			        "vw_questao.descricao": {
+			          "Target": {
+			            "Entity": "vw_questao.descricao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_questao"
+			            },
+			            "Object": {
+			              "Role": "vw_questao.descricao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_questaos_have_descricaos"
+			        }
+			      ]
+			    },
+			    "vw_questao_has_cod_questao": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Questao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_questao": {
+			          "Target": {
+			            "Entity": "vw_questao"
+			          }
+			        },
+			        "vw_questao.cod_questao": {
+			          "Target": {
+			            "Entity": "vw_questao.cod_questao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_questao"
+			            },
+			            "Object": {
+			              "Role": "vw_questao.cod_questao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_questaos_have_cod_questaos"
+			        }
+			      ]
+			    },
+			    "tb_periodo_master_has_vw_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "tbPeriodoMaster"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_periodo_master": {
+			          "Target": {
+			            "Entity": "tb_periodo_master"
+			          }
+			        },
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_periodo_master"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_periodo_masters_have_vw_respondentes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "tb_periodo_master"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_tb_periodo_masters"
+			        }
+			      ]
+			    }
+			  }
 			}
 		contentType: json
 
