@@ -1,7 +1,7 @@
 table _Medidas
 	lineageTag: c63fdbc5-3cee-4305-880b-e8bcabdbd6fb
 
-	measure _Base = CALCULATE(DISTINCTCOUNT(vw_Respondente[CodRespondente]), all(vw_Resposta[Resposta]))
+	measure _Base = CALCULATE(DISTINCTCOUNT(vw_Respondente[CodRespondente]), All(vw_Resposta[Resposta]))
 		formatString: 0
 		lineageTag: b8067eb3-d32d-4ab3-bd02-710a08405798
 
@@ -104,6 +104,32 @@ table _Medidas
 	measure 'Quantidade de Comentários' = CALCULATE(DISTINCTCOUNT(tbComentarios[CodRespondente]))
 		formatString: 0
 		lineageTag: 6da78fd6-0e7c-420c-ba62-6c0d5cd8aa81
+
+	measure _Quantidade = DISTINCTCOUNT(vw_Resposta[CodRespondente])
+		formatString: 0
+		lineageTag: f41645bf-01ae-41aa-921f-942cd1d0603e
+
+	measure _BasePergunta = CALCULATE(DISTINCTCOUNT(vw_Resposta[CodRespondente]), ALLEXCEPT(vw_Resposta, vw_Resposta[Resposta]))
+		formatString: 0
+		lineageTag: 65a35e99-b8ce-4085-b365-cfd18d25f24f
+
+	measure _PercentualPergunta = ```
+			DIVIDE([_Quantidade],[_BasePergunta]) * 100 
+			```
+		lineageTag: 7b1b6be6-9c37-4785-839b-b04311632f6a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _BasePergunta2 = CALCULATE(DISTINCTCOUNT(vw_Resposta[CodRespondente]), ALLSELECTED(vw_Resposta[Resposta]))
+		formatString: 0
+		lineageTag: 439134e1-c98b-4972-8a6a-3389993f484e
+
+	measure _PercentualAtributoValor = ```
+			DIVIDE([_Quantidade], [_BasePergunta2]) * 100 
+			```
+		lineageTag: 2dbba69e-7874-4d93-82e7-f5b717845bcb
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Column1
 		dataType: string
