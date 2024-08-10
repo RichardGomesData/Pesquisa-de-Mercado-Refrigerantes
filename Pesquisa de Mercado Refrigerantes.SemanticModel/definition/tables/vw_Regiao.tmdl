@@ -18,6 +18,20 @@ table vw_Regiao
 
 		annotation SummarizationSetBy = Automatic
 
+	column EmailGerente = ```
+			IF(vw_Regiao[Resposta]="Sul","aluno.1799@ebac.art.br", 
+			               IF(vw_Regiao[Resposta]="Sudeste","aluno.1799@ebac.art.br",
+			               IF(vw_Regiao[Resposta]="Norte + Centro-Oeste","aluno.1799@ebac.art.br",
+			               IF(vw_Regiao[Resposta]="Nordeste", "aluno.1799@ebac.art.br"
+			))))
+			```
+		dataType: string
+		lineageTag: 7cebc498-61f7-441d-aed0-6d55fac627f1
+		summarizeBy: none
+		isDataTypeInferred
+
+		annotation SummarizationSetBy = Automatic
+
 	partition vw_Regiao = m
 		mode: import
 		source =
