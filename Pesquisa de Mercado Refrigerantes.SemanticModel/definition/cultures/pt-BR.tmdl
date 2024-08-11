@@ -731,6 +731,16 @@ cultureInfo pt-BR
 			          "resposta": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Região": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1459,325 +1469,144 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
+			    },
+			    "vw_regiao.email_gerente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_Regiao",
+			          "ConceptualProperty": "EmailGerente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "email gerente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EmailGerente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.quantidade_de_comentários": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Quantidade de Comentários"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quantidade de comentários": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.v_Quantidade_quantidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_Quantidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_quantidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.v_BasePergunta_BasePergunta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_BasePergunta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_BasePergunta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.v_PercentualPergunta_PercentualPergunta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_PercentualPergunta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_PercentualPergunta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.v_BasePergunta2_BasePergunta2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_BasePergunta2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_BasePergunta2": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_Medidas_medida.v_PercentualAtributoValor_PercentualAtributoValor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "_PercentualAtributoValor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_PercentualAtributoValor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tb_comentario.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "tbComentarios",
+			          "ConceptualProperty": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "vw_regiao_has_vw_respondente": {
-			      "Binding": {
-			        "ConceptualEntity": "vw_Regiao"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vw_regiao": {
-			          "Target": {
-			            "Entity": "vw_regiao"
-			          }
-			        },
-			        "vw_respondente": {
-			          "Target": {
-			            "Entity": "vw_respondente"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vw_regiao"
-			            },
-			            "Object": {
-			              "Role": "vw_respondente"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vw_regiaos_have_vw_respondentes"
-			        }
-			      ]
-			    },
-			    "vw_sexo_has_vw_respondente": {
-			      "Binding": {
-			        "ConceptualEntity": "vw_Sexo"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vw_sexo": {
-			          "Target": {
-			            "Entity": "vw_sexo"
-			          }
-			        },
-			        "vw_respondente": {
-			          "Target": {
-			            "Entity": "vw_respondente"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vw_sexo"
-			            },
-			            "Object": {
-			              "Role": "vw_respondente"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vw_sexos_have_vw_respondentes"
-			        }
-			      ]
-			    },
-			    "vw_idade_has_vw_respondente": {
-			      "Binding": {
-			        "ConceptualEntity": "vw_Idade"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vw_idade": {
-			          "Target": {
-			            "Entity": "vw_idade"
-			          }
-			        },
-			        "vw_respondente": {
-			          "Target": {
-			            "Entity": "vw_respondente"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vw_idade"
-			            },
-			            "Object": {
-			              "Role": "vw_respondente"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vw_idades_have_vw_respondentes"
-			        }
-			      ]
-			    },
-			    "tb_questao_opcao_has_vw_questao": {
-			      "Binding": {
-			        "ConceptualEntity": "tbQuestaoOpcao"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "tb_questao_opcao": {
-			          "Target": {
-			            "Entity": "tb_questao_opcao"
-			          }
-			        },
-			        "vw_questao": {
-			          "Target": {
-			            "Entity": "vw_questao"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "tb_questao_opcao"
-			            },
-			            "Object": {
-			              "Role": "vw_questao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "tb_questao_opcaos_have_vw_questaos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vw_questao"
-			            },
-			            "Object": {
-			              "Role": "tb_questao_opcao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vw_questaos_have_tb_questao_opcaos"
-			        }
-			      ]
-			    },
-			    "vw_resposta_has_tb_comentario": {
-			      "Binding": {
-			        "ConceptualEntity": "vw_Resposta"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vw_resposta": {
-			          "Target": {
-			            "Entity": "vw_resposta"
-			          }
-			        },
-			        "tb_comentario": {
-			          "Target": {
-			            "Entity": "tb_comentario"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vw_resposta"
-			            },
-			            "Object": {
-			              "Role": "tb_comentario"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vw_respostas_have_tb_comentarios"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "tb_comentario"
-			            },
-			            "Object": {
-			              "Role": "vw_resposta"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "tb_comentarios_have_vw_respostas"
-			        }
-			      ]
-			    },
-			    "vw_resposta_has_vw_respondente": {
-			      "Binding": {
-			        "ConceptualEntity": "vw_Resposta"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vw_resposta": {
-			          "Target": {
-			            "Entity": "vw_resposta"
-			          }
-			        },
-			        "vw_respondente": {
-			          "Target": {
-			            "Entity": "vw_respondente"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vw_resposta"
-			            },
-			            "Object": {
-			              "Role": "vw_respondente"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vw_respostas_have_vw_respondentes"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vw_respondente"
-			            },
-			            "Object": {
-			              "Role": "vw_resposta"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vw_respondentes_have_vw_respostas"
-			        }
-			      ]
-			    },
-			    "vw_resposta_has_vw_questao": {
-			      "Binding": {
-			        "ConceptualEntity": "vw_Resposta"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vw_resposta": {
-			          "Target": {
-			            "Entity": "vw_resposta"
-			          }
-			        },
-			        "vw_questao": {
-			          "Target": {
-			            "Entity": "vw_questao"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vw_resposta"
-			            },
-			            "Object": {
-			              "Role": "vw_questao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vw_respostas_have_vw_questaos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vw_questao"
-			            },
-			            "Object": {
-			              "Role": "vw_resposta"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vw_questaos_have_vw_respostas"
-			        }
-			      ]
-			    },
-			    "vw_respondente_has_vw_idade": {
-			      "Binding": {
-			        "ConceptualEntity": "vw_Respondente"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vw_respondente": {
-			          "Target": {
-			            "Entity": "vw_respondente"
-			          }
-			        },
-			        "vw_idade": {
-			          "Target": {
-			            "Entity": "vw_idade"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vw_respondente"
-			            },
-			            "Object": {
-			              "Role": "vw_idade"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vw_respondentes_have_vw_idades"
-			        }
-			      ]
-			    },
 			    "vw_respondente_has_vw_regiao": {
 			      "Binding": {
 			        "ConceptualEntity": "vw_Respondente"
@@ -1841,6 +1670,270 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "vw_respondentes_have_vw_sexos"
+			        }
+			      ]
+			    },
+			    "tb_comentario_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "tbComentarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_comentario": {
+			          "Target": {
+			            "Entity": "tb_comentario"
+			          }
+			        },
+			        "tb_comentario.me": {
+			          "Target": {
+			            "Entity": "tb_comentario.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_comentario"
+			            },
+			            "Object": {
+			              "Role": "tb_comentario.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_comentarios_have_me"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_v_Medidas_medida_v_PercentualAtributoValor_PercentualAtributoValor": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "v_Medidas_medida.v_PercentualAtributoValor_PercentualAtributoValor": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_PercentualAtributoValor_PercentualAtributoValor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_PercentualAtributoValor_PercentualAtributoValor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have__PercentualAtributoValor"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_v_Medidas_medida_v_BasePergunta2_BasePergunta2": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "v_Medidas_medida.v_BasePergunta2_BasePergunta2": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_BasePergunta2_BasePergunta2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_BasePergunta2_BasePergunta2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have__BasePergunta2"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_v_Medidas_medida_v_PercentualPergunta_PercentualPergunta": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "v_Medidas_medida.v_PercentualPergunta_PercentualPergunta": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_PercentualPergunta_PercentualPergunta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_PercentualPergunta_PercentualPergunta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have__PercentualPergunta"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_v_Medidas_medida_v_BasePergunta_BasePergunta": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "v_Medidas_medida.v_BasePergunta_BasePergunta": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_BasePergunta_BasePergunta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_BasePergunta_BasePergunta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have__BasePergunta"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_v_Medidas_medida_v_Quantidade_quantidade": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "v_Medidas_medida.v_Quantidade_quantidade": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.v_Quantidade_quantidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.v_Quantidade_quantidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have__quantidade"
+			        }
+			      ]
+			    },
+			    "tb_comentario_has_v_Medidas_medida_quantidade_de_comentários": {
+			      "Binding": {
+			        "ConceptualEntity": "tbComentarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_comentario": {
+			          "Target": {
+			            "Entity": "tb_comentario"
+			          }
+			        },
+			        "v_Medidas_medida.quantidade_de_comentários": {
+			          "Target": {
+			            "Entity": "v_Medidas_medida.quantidade_de_comentários"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_comentario"
+			            },
+			            "Object": {
+			              "Role": "v_Medidas_medida.quantidade_de_comentários"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_comentarios_have_quantidade_de_comentários"
+			        }
+			      ]
+			    },
+			    "vw_regiao_has_email_gerente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Regiao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_regiao": {
+			          "Target": {
+			            "Entity": "vw_regiao"
+			          }
+			        },
+			        "vw_regiao.email_gerente": {
+			          "Target": {
+			            "Entity": "vw_regiao.email_gerente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_regiao"
+			            },
+			            "Object": {
+			              "Role": "vw_regiao.email_gerente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_regiaos_have_email_gerentes"
 			        }
 			      ]
 			    },
@@ -3273,6 +3366,322 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "vw_questaos_have_cod_questaos"
+			        }
+			      ]
+			    },
+			    "vw_respondente_has_vw_idade": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Respondente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        },
+			        "vw_idade": {
+			          "Target": {
+			            "Entity": "vw_idade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "vw_idade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_vw_idades"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_vw_questao": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "vw_questao": {
+			          "Target": {
+			            "Entity": "vw_questao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "vw_questao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have_vw_questaos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_questao"
+			            },
+			            "Object": {
+			              "Role": "vw_resposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_questaos_have_vw_respostas"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_vw_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have_vw_respondentes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_respondente"
+			            },
+			            "Object": {
+			              "Role": "vw_resposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respondentes_have_vw_respostas"
+			        }
+			      ]
+			    },
+			    "vw_resposta_has_tb_comentario": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Resposta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_resposta": {
+			          "Target": {
+			            "Entity": "vw_resposta"
+			          }
+			        },
+			        "tb_comentario": {
+			          "Target": {
+			            "Entity": "tb_comentario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_resposta"
+			            },
+			            "Object": {
+			              "Role": "tb_comentario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_respostas_have_tb_comentarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_comentario"
+			            },
+			            "Object": {
+			              "Role": "vw_resposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_comentarios_have_vw_respostas"
+			        }
+			      ]
+			    },
+			    "tb_questao_opcao_has_vw_questao": {
+			      "Binding": {
+			        "ConceptualEntity": "tbQuestaoOpcao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_questao_opcao": {
+			          "Target": {
+			            "Entity": "tb_questao_opcao"
+			          }
+			        },
+			        "vw_questao": {
+			          "Target": {
+			            "Entity": "vw_questao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_questao_opcao"
+			            },
+			            "Object": {
+			              "Role": "vw_questao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_questao_opcaos_have_vw_questaos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_questao"
+			            },
+			            "Object": {
+			              "Role": "tb_questao_opcao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_questaos_have_tb_questao_opcaos"
+			        }
+			      ]
+			    },
+			    "vw_idade_has_vw_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Idade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_idade": {
+			          "Target": {
+			            "Entity": "vw_idade"
+			          }
+			        },
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_idade"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_idades_have_vw_respondentes"
+			        }
+			      ]
+			    },
+			    "vw_sexo_has_vw_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_sexo": {
+			          "Target": {
+			            "Entity": "vw_sexo"
+			          }
+			        },
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_sexo"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_sexos_have_vw_respondentes"
+			        }
+			      ]
+			    },
+			    "vw_regiao_has_vw_respondente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_Regiao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_regiao": {
+			          "Target": {
+			            "Entity": "vw_regiao"
+			          }
+			        },
+			        "vw_respondente": {
+			          "Target": {
+			            "Entity": "vw_respondente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_regiao"
+			            },
+			            "Object": {
+			              "Role": "vw_respondente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_regiaos_have_vw_respondentes"
 			        }
 			      ]
 			    },
