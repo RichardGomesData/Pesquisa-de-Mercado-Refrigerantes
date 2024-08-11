@@ -131,6 +131,13 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure _CorIA =
+			if (SELECTEDVALUE(vw_Regiao[Resposta])="Sul","#D27122",
+			         if (SELECTEDVALUE(vw_Regiao[Resposta])="Sudeste","#22B2D2",
+			         if (SELECTEDVALUE(vw_Regiao[Resposta])="Norte + Centro-Oeste","#4022D2",
+			         if (SELECTEDVALUE(vw_Regiao[Resposta])="Nordeste","#3AD22", "#D2229A"))))
+		lineageTag: 5fe0dfd8-4ee1-4fd3-ba05-95bdb4768d52
+
 	column Column1
 		dataType: string
 		isHidden
